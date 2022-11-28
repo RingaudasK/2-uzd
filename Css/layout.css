@@ -1,0 +1,107 @@
+body {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+header {
+    height: 110px;
+    padding: 0 125px;
+}
+.header-gaps {
+    display: flex;
+    gap: 50px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+.container {
+    float: left;
+    padding: 100px 210px;
+    text-align: center;
+    width: 100%;
+}
+.container-headline {
+    background-image: url('../Img/jeans.jpg');
+    background-size: cover;
+    height: calc(100vh - 110px - 100px);
+    margin: 0 100px;
+    width: calc(100% - 200px);
+}
+.col-thr {
+    width: 31%;
+}
+.col-one-half {
+    width: 46%;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        padding: 100px 150px;
+    }
+}
+@media (max-width: 992px) {
+    header {
+        padding: 0 75px;
+    }
+    .container {
+        padding: 50px 50px;
+    }
+    .container-headline {
+        height: auto;
+        margin: 50px;
+        width: calc(100% - 100px);
+    }
+    h1 {
+        padding-top: 0;
+    }
+}
+@media (max-width: 768px) {
+    .header-gaps {
+        gap: 30px;
+    }
+    .container-headline {
+        align-items: center;
+        height: auto;
+        margin: 50px;
+        width: calc(100% - 100px);
+    }
+    .text-on-img-center {
+        padding-top: 20px;
+    }
+    .col-thr {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        padding: 0 10px;
+    }
+    .header-gaps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .container {
+        padding: 50px 10px;
+    }
+    .container-headline {
+        align-items: center;
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    .text-on-img-center {
+        width: 100%;
+    }
+    h1 {
+        font-size: 50px !important;
+    }
+    .col-one-half {
+        width: 100%;
+    }
+}
